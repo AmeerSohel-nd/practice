@@ -1,0 +1,20 @@
+<div class="container">
+  <div>
+    Favorite color: <input type="text" value="" #txtName />
+    <button (click)="addState(txtName.value);">Add</button>
+    <p>{{states | joinArray}}</p>
+    <p>{{fame}}</p>
+  </div>
+    <div class="row">
+      <app-sucess-do [(showSomeText)]="showingText" [conditionAcess]="name">
+        <h4 #content class="military">single Content Projection</h4>
+        <h1 question>Multiple Content Projection</h1>
+      </app-sucess-do>
+    </div>
+    <div>
+      parent component == {{showingText}}
+    </div>
+  <button (click)="onClick()">RxJs Learning</button>
+</div>
+
+  

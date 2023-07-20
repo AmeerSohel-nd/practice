@@ -1,0 +1,24 @@
+<div class="container-fluid">
+    <div class="row wrapping">
+        <div class="col">
+            <h4>MyWork</h4>
+        </div>
+        <div class="col wrap home-col">
+            <h5 routerLink="home">Home</h5>
+        </div>
+        <div class="col wrap failures-col">
+            <h5 routerLink="my-failures">Failures</h5>
+        </div>
+        <div class="col wrap success-col">
+            <h5 routerLink="my-success">Success</h5>
+        </div>
+    </div>
+</div>
+<div class="row div-align">
+    <div class="col-md-2">
+        <button (click)="logIn()">Log In</button>
+    </div>
+    <div class="col-md-2">
+        <button (click)="logOut()">Log Out</button>
+    </div>
+</div>

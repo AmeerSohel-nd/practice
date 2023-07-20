@@ -1,0 +1,9 @@
+<p>sucess-do works!</p>
+<p>solider</p>
+<ng-content></ng-content>
+<button (click)="onClick()">Button</button>
+<div appHighlight>The chained hero's birthday is
+{{ birthday | date | uppercase}}</div>
+<ng-content select="[question]"></ng-content>
+<p>child component ==  {{showSomeText}}</p>
+<!-- ngNonBindable is used for not applying calculations or pipes in div -->

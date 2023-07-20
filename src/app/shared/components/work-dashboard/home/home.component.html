@@ -1,0 +1,34 @@
+<div class="header">
+  <h2>Home</h2>
+</div>
+
+<div>
+  <table>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>User Name</th>
+    </tr>
+    <ng-container *ngFor="let data of postData">
+      <tr>
+        <td>{{ data.id }}</td>
+        <td>{{ data.name }}</td>
+        <td>{{ data.username }}</td>
+      </tr>
+    </ng-container>
+  </table>
+</div>
+<div>
+  user id is {{userData.id}}
+  user name is {{userData.name}}
+</div>
+<button (click)="updateState()" > UPDATE STATE </button>
+
+<!-- <input [(ngModel)]="currentNumb" type="text"/> -->
+<a [routerLink]="['../home', 9]"
+[queryParams]="{allowEdit:'9'}"
+fragment = "loading">with Query Params</a>
+<a [routerLink]="['../home', 9, 'edit']"
+[queryParams]="{allowEdit:'4'}"
+fragment = "loading....">with Edit</a>
+<router-outlet></router-outlet>
